@@ -42,4 +42,37 @@
             open = !open;
         })
     })();
-})()
+})();
+
+// desktop handle
+(function() {
+    const propertiesArrow = document.getElementById('properties-arrow');
+    const propertiesContent = document.getElementById('properties-content');
+    
+    const detailArrow = document.getElementById('detail-arrow');
+    const detailContent = document.getElementById('detail-content');
+
+    (function propertiesHandler() {
+        let open = false;
+        const openClasses = 'item-content___1Pmbg property-content___5qOoN  expand___22Udx';
+        const closeClasses = 'item-content___1Pmbg property-content___5qOoN  collapse___3oJ-I';
+        const styleOpen = 'transform: rotate(-180deg);';
+        propertiesArrow.addEventListener('click', () => {
+            propertiesArrow.style = open ? '' : styleOpen;
+            propertiesContent.classList = open ? closeClasses : openClasses;
+            open = !open;
+        })
+    })();
+    
+    (function detailHandler() {
+        let open = false;
+        const openClasses = 'item-content___1Pmbg expand___22Udx';
+        const closeClasses = 'item-content___1Pmbg property-content___5qOoN  collapse___3oJ-I';
+        const styleOpen = 'transform: rotate(-180deg);';
+        detailArrow.addEventListener('click', () => {
+            detailArrow.style = open ? '' : styleOpen;
+            detailContent.classList = open ? closeClasses : openClasses;
+            open = !open;
+        })
+    })();
+})();
