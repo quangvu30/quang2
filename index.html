@@ -96,9 +96,46 @@
   <link rel="stylesheet" type="text/css" href="./NFT Market_files/p__MarketPlace__Detail.73a276f5.chunk.css">
   <script charset="utf-8" src="./NFT Market_files/p__MarketPlace__Detail.ce2ca552.async.js"></script>
   <link rel="stylesheet" href="./NFT Market_files/style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utils.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0-rc.0/web3.min.js"
+    integrity="sha512-/PTXSvaFzmO4So7Ghyq+DEZOz0sNLU4v1DP4gMOfY3kFu9L/IKoqSHZ6lNl3ZoZ7wT20io3vu/U4IchGcGIhfw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body><svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+<body>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="modal-title">
+        <p>Connect to a wallet</p>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button">&times;</span>
+      </div>
+      <div class="modal-content">
+        <div class="btn-image" id="btn-connect-metamask">
+          <img src="./assets/metamask.png" alt="metamask" />
+        </div>
+        <div class="btn-image not-allowed">
+          <img src="./assets/walletconnect.png" alt="walletconnect" />
+        </div>
+        <div class="btn-image not-allowed">
+          <img src="./assets/tokenpocket.png" alt="metamask" />
+        </div>
+        <div class="btn-image not-allowed">
+          <img src="./assets/mathwallet.png" alt="metamask" />
+        </div>
+        <div class="btn-image not-allowed">
+          <img src="./assets/trustwallet.png" alt="metamask" />
+        </div>
+        <div class="btn-image not-allowed">
+          <img src="./assets/binancewallet.png" alt="metamask" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
     <symbol id="icon-more" viewBox="0 0 1024 1024">
       <path
         d="M508.288 61.12c-248.64 0-450.88 202.24-450.88 450.88s202.24 450.912 450.88 450.912 450.912-202.304 450.912-450.88c0-248.672-202.304-450.944-450.88-450.944z m0 838.528c-213.76 0-387.616-173.92-387.616-387.648 0-213.76 173.856-387.616 387.616-387.616 213.728 0 387.648 173.856 387.648 387.616 0 213.728-173.92 387.648-387.648 387.648z"
@@ -479,7 +516,7 @@
             </div>
           </div>
           <div class="btn-connect"><button type="button"
-              class="ant-btn ant-btn-primary connect-btn___2Jyu3"><span>Connect Wallet</span></button></div>
+              class="ant-btn ant-btn-primary connect-btn___2Jyu3" id="btn-connect-metamask" onclick="document.getElementById('id01').style.display='block'"><span>Connect Wallet</span></button></div>
         </div>
       </header>
       <div class="children___fLnSE">
@@ -605,7 +642,7 @@
                         direction="ltr">750,000 RACA</span></article>
                   </div>
                   <div class="ant-col ant-col-24"><button type="button"
-                      class="ant-btn ant-btn-primary ant-btn-background-ghost buy-btn___23C44"><span>Buy
+                      class="ant-btn ant-btn-primary ant-btn-background-ghost buy-btn___23C44" id="btn-buy-now"><span>Buy
                         Now</span></button></div>
                 </div>
                 <div class="ant-col ant-col-10 amount-col___2gEV9">

@@ -1,0 +1,40 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  border-bottom: var(--box-border);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.w3-modal {
+  background-color: white;
+}
+
+.w3-modal-content {
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.btn-image {
+  height: 75px;
+  width: 60%;
+  padding: 1rem 35px;
+  margin: 8px 0;
+  border: 1px solid rgba(56, 56, 56, 0.2);
+  cursor: pointer;
+}
+
+.btn-image > img {
+  height: 100%;
+}
+
+.not-allowed {
+  cursor: not-allowed;
+}
